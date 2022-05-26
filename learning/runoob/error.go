@@ -34,6 +34,7 @@ func Divide(varDividee int, varDivider int) (result int, errorMsg string) {
 
 func Sqrt(f float64) (float64, error) {
 	if f < 0 {
+		//使用errors创建一个只有错误信息string的error
 		return 0, errors.New("math:square root of negative number")
 	}
 	return float64(f * f), errors.New("")

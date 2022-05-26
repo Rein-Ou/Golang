@@ -4,6 +4,8 @@ import "fmt"
 
 var a, b, c int
 
+// _本身是一个特殊的标识符，被称为空白标识符。赋给这个标识符的值都将被抛弃
+
 func main() {
 	//var v_name v_type
 	var age int

@@ -1,15 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func main() {
-	i := 2
-	switch i {
-	case 1:
-		fmt.Println(1)
-	case 2:
-		fmt.Println(2)
-	case 3:
-		fmt.Println(3)
+	e := errors.New("error message")
+	if errors.Is(e, e) {
+		fmt.Printf("%T", e)
 	}
 }
