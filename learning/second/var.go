@@ -15,10 +15,13 @@ func main() {
 	PATH := os.Getenv("PATH")
 	fmt.Println(PATH)
 	fmt.Println(Pi)
+	var c1 complex64 = 5 + 10i
+	fmt.Println(c1)
+	c := 1
+	fmt.Println(c << 10)
 }
 
 //优先级比main高,一个源文件只能包含一个init函数
 func init() {
 	Pi = 4 * math.Atan(1)
-
 }
