@@ -1,4 +1,4 @@
-package main
+package subfunc
 
 func Factorial(n uint64) (result uint64) {
 	if n > 0 {

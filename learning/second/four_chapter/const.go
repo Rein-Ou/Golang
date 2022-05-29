@@ -16,8 +16,9 @@ const (
 	YB
 )
 
-func main() {
+var ac int
 
+func main() {
 	fmt.Println(GB)
 	const hardEight = (1 << 100) >> 97
 	fmt.Println(hardEight)
