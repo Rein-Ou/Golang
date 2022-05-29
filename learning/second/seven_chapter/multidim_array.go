@@ -15,4 +15,5 @@ func main() {
 			screen[x][y] = 0
 		}
 	}
+
 }
