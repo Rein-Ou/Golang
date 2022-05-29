@@ -11,4 +11,5 @@ func main() {
 		fib[i] = fib[i-1] + fib[i-2]
 	}
 	fmt.Println(fib)
+
 }
