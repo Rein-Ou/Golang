@@ -35,6 +35,7 @@ func Append(slice, data []byte) []byte {
 	return newSlice
 }
 
+//使用Buffer方式进行
 func AppendBuffer(slice, data []byte) []byte {
 	var buffer = bytes.Buffer{}
 	buffer.Write(slice)
