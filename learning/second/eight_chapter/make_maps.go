@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+//可以使用用切片作为 map 的值
+
 func main() {
 	var mapLit map[string]int
 

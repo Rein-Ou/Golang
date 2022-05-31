@@ -8,5 +8,5 @@ func main() {
 		2: func() int { return 20 },
 		5: func() int { return 50 },
 	}
-	fmt.Println(mf[1]())
+	fmt.Println(mf[5]())
 }
