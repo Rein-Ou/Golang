@@ -1,3 +1,12 @@
 golang 内存泄露场景
 
 goroutine泄露
+
+for key,value:=range map1{
+...
+}
+
+for key:=range map1{
+...
+}
+
