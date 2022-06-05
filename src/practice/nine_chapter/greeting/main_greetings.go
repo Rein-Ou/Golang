@@ -6,5 +6,15 @@ import (
 )
 
 func main() {
-	fmt.Println(greetings.Greeting())
+	user := "Rein"
+	fmt.Println(greetings.GoodDay(user))
+	fmt.Println(greetings.GoodNight(user))
+	if greetings.IsAM() {
+		fmt.Println("早上")
+	} else if greetings.IsAfternoon() {
+		fmt.Println("下午")
+	} else {
+		greetings.IsEvening()
+		fmt.Println("晚上")
+	}
 }
