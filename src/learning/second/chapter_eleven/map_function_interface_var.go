@@ -4,7 +4,7 @@ import "fmt"
 
 type obj interface{}
 
-func mapFunc(mf func(obj) obj, list []obj) []obj {
+func mapFunc(mf func(obj) obj, list ...obj) []obj {
 	result := make([]obj, len(list))
 	for ix, v := range list {
 		result[ix] = mf(v)
@@ -23,13 +23,13 @@ func main() {
 		return i
 	}
 	isl := []obj{0, 1, 2, 3, 4, 5}
-	res1 := mapFunc(mf, isl)
+	res1 := mapFunc(mf, isl...)
 	for _, v := range res1 {
 		fmt.Println(v)
 	}
 	println()
 	ssl := []obj{"0", "1", "2", "3", "4", "5"}
-	res2 := mapFunc(mf, ssl)
+	res2 := mapFunc(mf, ssl...)
 	for _, v := range res2 {
 		fmt.Println(v)
 	}
