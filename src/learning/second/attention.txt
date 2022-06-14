@@ -10,3 +10,5 @@ for key:=range map1{
 ...
 }
 
+init() is a very special function meant to execute prior to the main() function
+
