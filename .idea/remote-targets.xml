@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <option name="projectDefaultTargetUuid" value="f283cf28-5fd1-41b5-a3c8-8dff14e04953" />
+    <targets>
+      <target name="WSL - Ubuntu-20.04" type="wsl" uuid="f283cf28-5fd1-41b5-a3c8-8dff14e04953">
+        <config>
+          <option name="distributionMsId" value="Ubuntu-20.04" />
+          <option name="projectRootOnTarget" value="/mnt/e/SoftWare/GoLand 2022.1.1/jbr/bin&#10;/Golang" />
+        </config>
+        <ContributedStateBase type="GoLanguageRuntime">
+          <config>
+            <option name="goPath" value="/home/rein/go" />
+            <option name="goRoot" value="/usr/bin/go" />
+            <option name="goVersion" value="go1.18.3 linux/amd64" />
+          </config>
+        </ContributedStateBase>
+      </target>
+      <target name="ubuntu@101.33.32.112:22" type="ssh/sftp" uuid="3cd7e309-9be4-4ba7-8563-b48097e28074">
+        <config>
+          <option name="projectRootOnTarget" value="/home/ubuntu/Golang" />
+          <option name="serverName" value="ubuntu@101.33.32.112:22 password" />
+        </config>
+        <ContributedStateBase type="GoLanguageRuntime">
+          <config>
+            <option name="goPath" value="/home/ubuntu/go" />
+            <option name="goRoot" value="/usr/bin/go" />
+            <option name="goVersion" value="go1.18.3 linux/amd64" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>
